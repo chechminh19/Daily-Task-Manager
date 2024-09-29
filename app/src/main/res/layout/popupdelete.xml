@@ -1,0 +1,88 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+    <TextView
+        android:id="@+id/showTextTaskName"
+        android:layout_width="290dp"
+        android:layout_height="37dp"
+        android:layout_marginTop="152dp"
+        android:gravity="center_vertical"
+        android:hint="taskName"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/showTextTaskTime"
+        android:layout_width="289dp"
+        android:layout_height="41dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:hint="taskTime"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showTextTaskName" />
+
+    <Button
+        android:id="@+id/buttonYes"
+        android:layout_width="100dp"
+        android:layout_height="56dp"
+        android:layout_marginStart="56dp"
+        android:layout_marginTop="48dp"
+        android:text="Yes"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showTextTaskTime" />
+
+    <Button
+        android:id="@+id/buttonNo"
+        android:layout_width="107dp"
+        android:layout_height="56dp"
+        android:layout_marginTop="48dp"
+        android:layout_marginEnd="60dp"
+        android:text="No"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/showTextTaskTime" />
+
+    <TextView
+        android:id="@+id/textTitleDelete"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginTop="80dp"
+        android:text="Delete Task"
+        android:textSize="20dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.498"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTaskName"
+        android:layout_width="79dp"
+        android:layout_height="35dp"
+        android:layout_marginTop="152dp"
+        android:gravity="center_vertical"
+        android:text="TaskName:"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/showTextTaskName"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/textTaskTime"
+        android:layout_width="79dp"
+        android:layout_height="40dp"
+        android:layout_marginTop="32dp"
+        android:gravity="center_vertical"
+        android:text="Task Time:"
+        android:textSize="15dp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toStartOf="@+id/showTextTaskTime"
+        app:layout_constraintHorizontal_bias="0.767"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/textTaskName" />
+</androidx.constraintlayout.widget.ConstraintLayout>
